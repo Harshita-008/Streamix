@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+
+img {
+  cursor: pointer;
+}
+
+.flex-div {
+  display: flex;
+  align-items: center;
+}
+
+/* App container styles */
+.app-container {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Content layout structure */
+.content-wrapper {
+  display: flex;
+  padding-top: 60px;
+  min-height: calc(100vh - 60px);
+  width: 100%;
+  position: relative;
+}
+
+/* Global scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 0, 0, 0.7);
+}

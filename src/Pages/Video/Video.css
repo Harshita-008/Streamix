@@ -1,0 +1,23 @@
+.play-container {
+  width: calc(100% - 240px);
+  margin-left: 240px;
+  padding: 20px;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
+}
+
+.play-container-expanded {
+  width: calc(100% - 72px);
+  margin-left: 72px;
+}
+
+@media (max-width: 900px) {
+  .play-container {
+    width: 100%;
+    margin-left: 0;
+    padding: 15px;
+  }
+}

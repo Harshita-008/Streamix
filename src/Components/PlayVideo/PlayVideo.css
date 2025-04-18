@@ -1,0 +1,199 @@
+/* Main container styles */
+.play-video {
+    flex-basis: 69%;
+    padding-top: 70px;
+    margin-top: -50px;
+}
+
+/* Video player styles */
+.play-video iframe {
+    width: 100%;
+    height: 37vw;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Video title styles */
+.play-video h3 {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #000000;
+}
+
+/* Video info section (views, likes, etc.) */
+.play-video-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.play-video-info img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.play-video-info span {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+/* Divider line */
+.play-video hr {
+    border: 0;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+/* Channel info section */
+.publisher {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1);
+}
+
+.publisher div {
+    flex: 1;
+    line-height: 18px;
+}
+
+.publisher img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.publisher div p {
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.publisher div span {
+    font-size: 13px;
+    color: #000000;
+}
+
+/* Subscribe button */
+.publisher button {
+    background: rgba(255, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.publisher button:hover {
+    background: rgba(255, 0, 0, 1);
+    transform: scale(1.05);
+}
+
+/* Video description section */
+.vid-description {
+    padding-left: 55px;
+    margin: 15px 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1);
+}
+
+.vid-description p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+.vid-description h4 {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 15px;
+}
+
+/* Comments section */
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.comment:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateX(5px);
+    box-shadow: 0 3px 8px rgba(255, 0, 0, 0.15);
+}
+
+.comment img {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.comment h3 {
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: #000000;
+}
+
+.comment h3 span {
+    font-size: 12px;
+    color: #000000;
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+/* Comment actions (like, dislike) */
+.comment-action {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.comment-action img {
+    border-radius: 0;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.comment-action span {
+    margin-right: 20px;
+    color: #000000;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    .play-video {
+        flex-basis: 100%;
+    }
+    .play-video iframe {
+        width: 100%;
+        height: 50vw;
+    }
+    .vid-description {
+        padding-left: 0;
+    }
+    .play-video .play-video-info span {
+        margin-left: 0;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+}
