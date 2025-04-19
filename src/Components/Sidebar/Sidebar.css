@@ -10,7 +10,7 @@
   transition: all 0.3s ease;
   z-index: 90;
   box-shadow: 1px 0 5px rgba(0, 0, 0, 0.05);
-  display: block; /* Explicitly set display to block to ensure visibility */
+  display: block; 
 }
 
 .shortcut-links {
@@ -104,7 +104,6 @@
   transform: scale(1.1);
 }
 
-/* Scrollbar styling for sidebar */
 .sidebar::-webkit-scrollbar {
   width: 4px;
 }
